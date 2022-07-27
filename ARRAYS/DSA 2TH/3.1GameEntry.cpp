@@ -86,6 +86,26 @@ void Score::print()
 }
 int main()
 {
-
+int main()
+{
+	GameEntry e1("Mohamed", 1500);
+	GameEntry e2("Mohamed", 100);
+	GameEntry e3("Mohamed", 1300);
+	GameEntry e4("Mohamed", 1600);
+	GameEntry e5("Mohamed", 800);
+	GameEntry e6("Mohamed", 500);
+	GameEntry e7("Mohamed", 400);
+	GameEntry e8("Mohamed", 107);
+	Score s;
+	s.add(e1);
+	s.add(e2);
+	s.add(e3);
+	s.add(e4);
+	s.add(e5);
+	s.add(e6);
+	s.add(e7);
+	s.add(e8);
+	s.print();
 	return 0;
+}
 }
