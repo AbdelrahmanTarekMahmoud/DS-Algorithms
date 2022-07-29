@@ -25,6 +25,7 @@ std::vector<T> quicksort(const std::vector<T>& arr) {
     std::vector<T> sorted_greater = quicksort(greater);
     // concatenate less part, pivot and greater part
     sorted_less.push_back(*pivot);
+    //vector_name.insert(position, iterator1, iterator2)
     sorted_less.insert(sorted_less.end(), sorted_greater.begin(), sorted_greater.end());
     
     return sorted_less;
