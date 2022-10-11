@@ -20,7 +20,7 @@ public:
 	{
 		std::vector<int> DFSresult;
 		std::vector<int> Visited(V + 1, 0);
-		for (int i = 0; i <= V; i++) // in case there are more than one component in the graph
+		for (int i = 1; i <= V; i++) // in case there are more than one component in the graph
 		{
 			if (!Visited[i])
 			{
